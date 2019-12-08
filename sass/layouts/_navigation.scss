@@ -1,0 +1,96 @@
+.navbar {
+  font-weight: 700;
+  font-family: Montserrat;
+  background-color: $color-secondary;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  position: fixed;
+  width: 100%;
+
+  @include respond(mobile-land) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  &-logo {
+    font-size: 1.75rem;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    transition: all 0.2s;
+  }
+
+  &-collapse {
+    float: right;
+    margin-left: auto;
+
+    @include respond(tab-land) {
+      display: none;
+      font-size: 1.1rem;
+    }
+  }
+
+  &-nav {
+    display: flex;
+
+    @include respond(tab-land) {
+      display: block;
+      margin: 15px auto;
+    }
+
+    li {
+      padding-right: 2.5rem;
+      text-align: right;
+      margin: 15px auto;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      @include respond(tab-land) {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.fixed-nav {
+  overflow: hidden;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  z-index: 1000;
+
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+
+  @include respond(mobile-land) {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+}
+
+.nav {
+  &-toggle {
+    color: $color-white;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+
+    @include respond(tab-land) {
+      display: block;
+    }
+  }
+
+  &-link {
+    &:hover,
+    &:active {
+      color: $color-primary;
+      transition: all 0.2s;
+    }
+  }
+}

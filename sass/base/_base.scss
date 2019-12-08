@@ -1,0 +1,35 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+html {
+  font-size: 100%;
+
+  @include respond(desktop) {
+    font-size: 80%;
+  }
+
+  @include respond(tab-land) {
+    font-size: 85%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 80%;
+  }
+
+  @include respond(mobile-land) {
+    font-size: 70%;
+  }
+
+  @include respond(mobile-port) {
+    font-size: 65%;
+  }
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+}

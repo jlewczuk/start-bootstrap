@@ -1,0 +1,27 @@
+{
+  "name": "start-boostrap",
+  "version": "1.0.0",
+  "description": "Webmaster at InterviewMe & Zety - practical task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlewczuk/start-bootstrap.git"
+  },
+  "author": "Jarosław Lewczuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlewczuk/start-bootstrap/issues"
+  },
+  "homepage": "https://github.com/jlewczuk/start-bootstrap#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "waypoints": "^4.0.1"
+  }
+}

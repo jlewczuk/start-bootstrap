@@ -1,0 +1,54 @@
+.btn {
+  border: 2px solid white;
+  font-size: 1.25rem;
+  padding: 1rem 1.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: white;
+    color: $color-primary;
+    transition: all 0.2s;
+  }
+
+  font-family: Lato;
+
+  &-form {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    color: white;
+    font-size: 1.1rem;
+    padding: 1rem 1.75rem;
+    margin-top: 1.5rem;
+    float: left;
+
+    &:hover,
+    &:active {
+      background-color: $color-primary-dark;
+      border-color: $color-primary-dark;
+      color: white;
+      transition: all 0.2s;
+    }
+  }
+
+  &-social {
+    height: 3.5rem;
+    width: 3.5rem;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100%;
+
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+
+    &:hover,
+    &:active {
+      color: $color-secondary;
+      transition: all 0.2s;
+    }
+  }
+}

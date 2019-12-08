@@ -1,0 +1,51 @@
+.footer {
+  background-color: $color-secondary;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  font-family: Montserrat;
+  color: white;
+
+  h4 {
+    font-size: 1.5rem;
+
+    @include respond(tab-land) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &-col {
+    margin-bottom: 1.5rem;
+    flex: 33.3%;
+    max-width: 33.3%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    @include respond(tab-land) {
+      flex: 100%;
+      max-width: 100%;
+    }
+
+    p {
+      @include respond(tab-land) {
+        font-size: 1.4rem;
+      }
+
+      a {
+        color: $color-primary;
+
+        &:hover,
+        &:active {
+          color: $color-primary-dark;
+        }
+      }
+    }
+  }
+}
+
+.copyright {
+  background-color: $color-tertiary;
+  color: white;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  font-family: Lato;
+}
